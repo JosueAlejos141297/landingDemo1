@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultoría GIMEX - Demo Gratuita</title>
+    <!-- Carga de Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Configuración de colores personalizados para Tailwind */
+        :root {
+            --color-primary-orange: #FF7F00; /* Naranja vibrante */
+            --color-dark-grey: #333333;      /* Gris oscuro */
+            --color-light-grey: #F5F5F5;     /* Gris muy claro para fondos */
+            --color-text-light: #FFFFFF;     /* Texto blanco */
+            --color-text-dark: #1A1A1A;      /* Texto casi negro */
+        }
+
+        /* Sobrescribir la configuración de colores de Tailwind con nuestras variables CSS */
+        .bg-primary-orange { background-color: var(--color-primary-orange); }
+        .text-primary-orange { color: var(--color-primary-orange); }
+        .bg-dark-grey { background-color: var(--color-dark-grey); }
+        .text-dark-grey { color: var(--color-dark-grey); }
+        .bg-light-grey { background-color: var(--color-light-grey); }
+        .text-light-grey { color: var(--color-light-grey); }
+        .text-text-light { color: var(--color-text-light); }
+        .text-text-dark { color: var(--color-text-dark); }
+
+        /* Fuente Inter desde Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Estilos adicionales para un diseño más limpio */
+        .container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+    </style>
+</head>
+<body class="bg-light-grey text-text-dark">
+
+    <!-- Encabezado -->
+    <header class="bg-dark-grey text-text-light py-4 shadow-md">
+        <div class="container flex justify-between items-center">
+            <!-- Logo de Consultoría GIMEX -->
+            <h1 class="text-2xl font-bold rounded-md">Consultoría GIMEX</h1>
+            <!-- Enlace de Demo Gratuita -->
+            <a href="#formulario" class="bg-primary-orange text-text-light px-6 py-2 rounded-full font-semibold hover:bg-orange-600 transition duration-300 ease-in-out shadow-lg">
+                Demo gratuita de [NOMBRE DEL SISTEMA]
+            </a>
+        </div>
+    </header>
+
+    <!-- Sección principal - Llamada a la acción y Beneficios -->
+    <main class="py-16 md:py-24">
+        <div class="container text-center">
+            <!-- Llamada a la acción -->
+            <section class="mb-16 md:mb-24">
+                <h2 class="text-4xl md:text-5xl font-extrabold text-dark-grey mb-6 leading-tight">
+                    Descubre cómo <span class="text-primary-orange">[NOMBRE DEL SISTEMA]</span> puede transformar tu operación.
+                </h2>
+                <p class="text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto">
+                    ¡Pruébalo gratis y lleva tu empresa al siguiente nivel!
+                </p>
+                <a href="#formulario" class="inline-block bg-primary-orange text-text-light text-xl md:text-2xl font-bold px-10 py-4 rounded-full shadow-xl hover:bg-orange-600 transition duration-300 ease-in-out transform hover:scale-105">
+                    ¡Comienza tu demo gratis ahora!
+                </a>
+            </section>
+
+            <!-- Beneficios clave -->
+            <section class="grid md:grid-cols-3 gap-8 md:gap-12 mt-16">
+                <!-- Beneficio 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200 flex flex-col items-center text-center">
+                    <div class="text-5xl mb-4 text-primary-orange">💡</div> <!-- Icono de bombilla -->
+                    <h3 class="text-2xl font-semibold text-dark-grey mb-3">Optimiza tareas clave de tu empresa</h3>
+                    <p class="text-gray-600">
+                        Automatiza procesos repetitivos y enfócate en lo que realmente importa para el crecimiento de tu negocio.
+                    </p>
+                </div>
+                <!-- Beneficio 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200 flex flex-col items-center text-center">
+                    <div class="text-5xl mb-4 text-primary-orange">📊</div> <!-- Icono de gráfico -->
+                    <h3 class="text-2xl font-semibold text-dark-grey mb-3">Mejora el control y la precisión</h3>
+                    <p class="text-gray-600">
+                        Obtén datos precisos en tiempo real para una toma de decisiones informada y estratégica.
+                    </p>
+                </div>
+                <!-- Beneficio 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200 flex flex-col items-center text-center">
+                    <div class="text-5xl mb-4 text-primary-orange">✅</div> <!-- Icono de check -->
+                    <h3 class="text-2xl font-semibold text-dark-grey mb-3">Cumple con requerimientos fiscales y administrativos</h3>
+                    <p class="text-gray-600">
+                        Mantente al día con las normativas sin complicaciones, evitando errores y sanciones.
+                    </p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Sección de Formulario -->
+    <section id="formulario" class="bg-dark-grey py-16 md:py-24">
+        <div class="container text-center">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-text-light mb-10">
+                ¡Descarga tu demo gratuita!
+            </h2>
+            <p class="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
+                Completa el formulario y un experto de Consultoría GIMEX se pondrá en contacto contigo para guiarte en el proceso.
+            </p>
+            <div class="max-w-xl mx-auto bg-white p-8 md:p-10 rounded-xl shadow-2xl">
+                <form action="#" method="POST" class="space-y-6">
+                    <div>
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required
+                            class="w-full px-5 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-orange focus:border-transparent transition duration-200 ease-in-out text-lg">
+                    </div>
+                    <div>
+                        <input type="text" id="empresa" name="empresa" placeholder="Empresa" required
+                            class="w-full px-5 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-orange focus:border-transparent transition duration-200 ease-in-out text-lg">
+                    </div>
+                    <div>
+                        <input type="email" id="correo" name="correo" placeholder="Correo electrónico" required
+                            class="w-full px-5 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-orange focus:border-transparent transition duration-200 ease-in-out text-lg">
+                    </div>
+                    <div>
+                        <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" required
+                            class="w-full px-5 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-orange focus:border-transparent transition duration-200 ease-in-out text-lg">
+                    </div>
+                    <button type="submit"
+                        class="w-full bg-primary-orange text-text-light text-xl font-bold px-8 py-4 rounded-full shadow-lg hover:bg-orange-600 transition duration-300 ease-in-out transform hover:scale-105 flex items-center justify-center">
+                        Descargar demo gratis <span class="ml-3 text-2xl">🔽</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="bg-gray-800 text-gray-400 py-8">
+        <div class="container flex flex-col md:flex-row justify-between items-center text-center md:text-left space-y-4 md:space-y-0">
+            <!-- Enlaces legales -->
+            <div class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6">
+                <a href="#" class="hover:text-primary-orange transition duration-200 ease-in-out">Aviso de privacidad</a>
+            </div>
+            <!-- Redes sociales -->
+            <div class="flex space-x-6 text-2xl">
+                <a href="#" class="hover:text-primary-orange transition duration-200 ease-in-out" aria-label="Facebook">
+                    <!-- Icono de Facebook (ejemplo con SVG simple o Font Awesome si se carga) -->
+                    <svg class="w-6 h-6 inline-block" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.879V14.65H8.03V12h2.408V9.35c0-2.392 1.465-3.715 3.594-3.715 1.052 0 1.954.078 2.224.113v2.58h-1.54c-1.207 0-1.442.574-1.442 1.417V12h2.89l-.47 2.65h-2.42V22c5.085-.792 9-5.187 9-10C22 6.477 17.523 2 12 2z"/></svg>
+                </a>
+                <a href="#" class="hover:text-primary-orange transition duration-200 ease-in-out" aria-label="Instagram">
+                    <!-- Icono de Instagram (ejemplo con SVG simple o Font Awesome si se carga) -->
+                    <svg class="w-6 h-6 inline-block" fill="currentColor" viewBox="0 0 24 24"><path d="M7.8 2c-2.48 0-4.5 2.02-4.5 4.5v11c0 2.48 2.02 4.5 4.5 4.5h8.4c2.48 0 4.5-2.02 4.5-4.5v-11c0-2.48-2.02-4.5-4.5-4.5H7.8zm8.4 2.5c.276 0 .5.224.5.5v.5c0 .276-.224.5-.5.5h-.5c-.276 0-.5-.224-.5-.5v-.5c0-.276.224-.5.5-.5h.5zm-4.2 2c-3.03 0-5.5 2.47-5.5 5.5s2.47 5.5 5.5 5.5 5.5-2.47 5.5-5.5-2.47-5.5-5.5-5.5zm0 2c1.93 0 3.5 1.57 3.5 3.5s-1.57 3.5-3.5 3.5-3.5-1.57-3.5-3.5 1.57-3.5 3.5-3.5z"/></svg>
+                </a>
+                <a href="#" class="hover:text-primary-orange transition duration-200 ease-in-out" aria-label="LinkedIn">
+                    <!-- Icono de LinkedIn (ejemplo con SVG simple o Font Awesome si se carga) -->
+                    <svg class="w-6 h-6 inline-block" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.284V9.59h3.419v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.463v6.075zM7.91 6.879c-.995 0-1.808-.813-1.808-1.812 0-.995.813-1.808 1.808-1.808.995 0 1.812.813 1.812 1.808 0 .999-.817 1.812-1.812 1.812zM9.737 20.452H6.18V9.59h3.557v10.862zM22.229 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.458c.979 0 1.771-.773 1.771-1.729V1.729C24 .774 23.208 0 22.229 0z"/></svg>
+                </a>
+            </div>
+            <!-- Copyright -->
+            <p class="text-sm">
+                &copy; 2025 Consultoría GIMEX. Expertos en soluciones Siigo Aspel.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
